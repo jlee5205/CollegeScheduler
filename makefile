@@ -18,35 +18,4 @@ CourseList.o: CourseList.cpp CourseList.h Course.h Course.o
 	g++ -std=c++11 -c CourseList.cpp -o CourseList.o
 
 clean:
-	rm -f *.o main
-	rm scheduler_main
-
-
-
-
-# all: $(BIN)/$(EXE)
-
-# $(BIN)/$(EXE): $(OBJ)/scheduler.o
-# 	$(CC) $(FLAGS) $(OBJ)/scheduler.o $(OBJ)/Student.o $(OBJ)/Course.o $(OBJ)/StudentList.o $(OBJ)/CourseList.o -o $@
-
-# $(OBJ)/scheduler.o: scheduler.cpp $(OBJ)/CourseList.o $(OBJ)/StudentList.o
-# 	$(CC) $(FLAGS) -c scheduler.cpp -o $@
-
-# $(OBJ)/Student.o: Student.cpp Student.h
-# 	$(CC) $(FLAGS) -c Student.cpp -o $@
-
-# $(OBJ)/Course.o: Course.cpp Course.h
-# 	$(CC) $(FLAGS) -c Course.cpp -o $@
-
-# $(OBJ)/StudentList.o: StudentList.cpp StudentList.h Student.h $(OBJ)/Student.o
-# 	$(CC) $(FLAGS) -c StudentList.cpp -o $@
-
-# $(OBJ)/CourseList.o: CourseList.cpp CourseList.h Course.h $(OBJ)/Course.o
-# 	$(CC) $(FLAGS) -c CourseList.cpp -o $@
-
-# tar:	clean
-# 	tar cvvf $(TARFILE) $(REPODIR)
-# 	gzip $(TARFILE)
-
-# clean:
-# 	rm -f $(OBJ)/*.o $(BIN)/$(EXE) *.tar.gz
+	rm -f *.o main scheduler_main
